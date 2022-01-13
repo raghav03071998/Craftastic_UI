@@ -6,15 +6,35 @@ body{
     align-items: center;
 }
 
+#signUpText
+{
+   width: 151px;
+   height: 81px;
+   left: 525px;
+   top: 117px;
+   margin-left: 10px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 36px;
+   line-height: 42px;
+   display: flex;
+   align-items: center;
+   color: #000000;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
 #signUpForm{
     position: absolute;
     left: 498px;
     right: 499px;
     top: 117px;
     bottom: 386px;
+
     background: #FFECEC;
     border: 1.03928px solid #000000;
-    box-shadow: 0px 4.1571px 4.1571px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20.7855px;
 }
 
@@ -22,24 +42,15 @@ body{
     /* position: absolute; */
     width: 356px;
     height: 39px;
+    margin-left: 35px;
     left: calc(50% - 356px/2 - 2px);
     top: calc(50% - 39px/2 - 271.5px);
-
     background: #FFF9F9;
-    box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 17.5474px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.05em;
-
-    color: #000000;
+    font-size: 20px;
 }
 
 #mobileNumber{
@@ -48,6 +59,11 @@ width: 356px;
 height: 39px;
 left: calc(50% - 356px/2 - 2px);
 top: calc(50% - 39px/2 - 200.5px);
+margin-left: 35px;
+align-items: center;
+text-align: center;
+font-size: 20px;
+margin-top: 20px;
 
 background: #FFF9F9;
 box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
@@ -86,6 +102,11 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.05em;
+margin-left: 35px;
+align-items: center;
+text-align: center;
+font-size: 20px;
+margin-top: 20px;
 
 color: #000000;
 }
@@ -110,6 +131,50 @@ color: #000000;
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
+    margin-left: 35px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#submit
+{
+    position: absolute;
+width: 356px;
+height: 39px;
+margin-top: 155px;
+left: calc(50% - 356px/2 - 2px);
+top: calc(50% - 39px/2 + 37.5px);
+color: white;
+background: #4D3333;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 17.5474px;
+}
+#confirmPassword{
+    /* position: absolute; */
+    width: 356px;
+    height: 39px;
+    left: calc(50% - 356px/2 - 2px);
+    top: calc(50% - 39px/2 - 58.5px);
+    background: #FFF9F9;
+    box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+    border-radius: 17.5474px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-left: 35px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 #button{
@@ -135,35 +200,10 @@ color: #000000;
 
 #para{
     position: absolute;
-    width: 912px;
-    height: 75px;
-    left: 264px;
-    top: 670px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-#signin{
-    position: absolute;
-left: 37.64%;
-right: 37.64%;
-top: 75.88%;
-bottom: 20.31%;
-
-background: #4D3333;
-mix-blend-mode: darken;
-box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
-border-radius: 17.5474px;
-
+width: 912px;
+height: 75px;
+left: 104px;
+top: 520px;
 
 font-family: Roboto;
 font-style: normal;
@@ -174,5 +214,35 @@ display: flex;
 align-items: center;
 text-align: center;
 
-color: #FFFFFF;
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+#signIn{
+    position: absolute;
+left: 100px;
+right: 37.64%;
+top: 620px;
+bottom: 20.31%;
+height: 30px
+;
+color: white;
+width: 250px;
+
+background: #4D3333;
+mix-blend-mode: darken;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 17.5474px;
+font-size: 20px;
+}
+
+#logo{
+    position: absolute;
+    width: 235px;
+    height: 67px;
+    left: 602px;
+    top: 0px;
 }
