@@ -1,0 +1,43 @@
+#craftastic{
+    position: absolute;
+    width: 1440px;
+    height: 920px;
+    left: -2px;
+    top: 104px;
+    background: linear-gradient(0deg, rgba(255, 236, 236, 0.2), rgba(255, 236, 236, 0.2));
+}
+
+#title{
+    position: absolute;
+    width: 370px;
+    height: 89px;
+    left: 838px;
+    top: 363px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+
+#join{
+    position: absolute;
+    /* width: 171px;
+    height: 89px;
+    left: 937px;
+    top: 475px; */
+    background: #7E5353;
+    border-radius: 20px;
+    /* position: absolute; */
+    width: 150px;
+    height: 41px;
+    left: 958px;
+    top: 499px;
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}

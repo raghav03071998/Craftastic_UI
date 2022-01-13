@@ -1,0 +1,178 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFECEC;
+    align-items: center;
+}
+
+#signUpForm{
+    position: absolute;
+    left: 498px;
+    right: 499px;
+    top: 117px;
+    bottom: 386px;
+    background: #FFECEC;
+    border: 1.03928px solid #000000;
+    box-shadow: 0px 4.1571px 4.1571px rgba(0, 0, 0, 0.25);
+    border-radius: 20.7855px;
+}
+
+#name{
+    /* position: absolute; */
+    width: 356px;
+    height: 39px;
+    left: calc(50% - 356px/2 - 2px);
+    top: calc(50% - 39px/2 - 271.5px);
+
+    background: #FFF9F9;
+    box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+    border-radius: 17.5474px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+#mobileNumber{
+    /* position: absolute; */
+width: 356px;
+height: 39px;
+left: calc(50% - 356px/2 - 2px);
+top: calc(50% - 39px/2 - 200.5px);
+
+background: #FFF9F9;
+box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+border-radius: 17.5474px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 100;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+#email{
+    /* position: absolute; */
+width: 356px;
+height: 39px;
+left: calc(50% - 356px/2 - 2px);
+top: calc(50% - 39px/2 - 129.5px);
+
+background: #FFF9F9;
+box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+border-radius: 17.5474px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 100;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+#password{
+    /* position: absolute; */
+    width: 356px;
+    height: 39px;
+    left: calc(50% - 356px/2 - 2px);
+    top: calc(50% - 39px/2 - 58.5px);
+    background: #FFF9F9;
+    box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+    border-radius: 17.5474px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+#button{
+    /* position: absolute; */
+    width: 356px;
+    height: 39px;
+    left: calc(50% - 356px/2 - 2px);
+    top: calc(50% - 39px/2 + 37.5px);
+    background: #4D3333;
+    box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+    border-radius: 17.5474px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#para{
+    position: absolute;
+    width: 912px;
+    height: 75px;
+    left: 264px;
+    top: 670px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+#signin{
+    position: absolute;
+left: 37.64%;
+right: 37.64%;
+top: 75.88%;
+bottom: 20.31%;
+
+background: #4D3333;
+mix-blend-mode: darken;
+box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
+border-radius: 17.5474px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
