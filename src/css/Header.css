@@ -10,9 +10,8 @@
     position: absolute;
     width: 239px;
     height: 102px;
-    left: 0px;
+    left: -1px;
     top: 0px;
-
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
@@ -31,7 +30,6 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    /* identical to box height */
     color: #A7A7A7;
 }
 
@@ -39,27 +37,34 @@
     position: absolute;
     width: 62px;
     height: 53px;
-    left: 1098px;
-    top: 26px;
+    left: 1095px;
+    top: 22px;
     border-radius: 20px;
 }
 
 #cart{
     position: absolute;
-width: 44px;
-height: 47px;
-left: 1208px;
-top: 30px;
-
-background: linear-gradient(0deg, rgba(255, 168, 168, 0.2), rgba(255, 168, 168, 0.2));
+    width: 44px;
+    height: 47px;
+    left: 1208px;
+    top: 30px;
+    background: linear-gradient(0deg, rgba(255, 168, 168, 0.2), rgba(255, 168, 168, 0.2));
 }
 
 #wishlist{
     position: absolute;
-width: 44px;
-height: 40px;
-left: 1277px;
-top: 26px;
+    width: 44px;
+    height: 40px;
+    left: 1277px;
+    top: 32px;
+    background: linear-gradient(0deg, rgba(252, 252, 252, 0.2), rgba(252, 252, 252, 0.2));
+}
 
-background: linear-gradient(0deg, rgba(252, 252, 252, 0.2), rgba(252, 252, 252, 0.2));
+#profile{
+    position: absolute;
+    width: 44px;
+    height: 47px;
+    left: 1353px;
+    top: 30px;
+    background: linear-gradient(0deg, rgba(255, 224, 224, 0.2), rgba(255, 224, 224, 0.2));
 }
