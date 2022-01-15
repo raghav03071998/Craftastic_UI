@@ -1,7 +1,7 @@
 import http from '../HttpCommon'
 
 const saveUser = userData =>{
-    return http.post("/saveUser",userData)
+    return http.post("https://craftasticapi.herokuapp.com/users/signup",userData)
 }
 
 

@@ -8,7 +8,9 @@ body{
 
 #signUpText
 {
-   width: 151px;
+    text-align: center;
+    
+   /* width: 151px;
    height: 81px;
    left: 525px;
    top: 117px;
@@ -21,7 +23,7 @@ body{
    display: flex;
    align-items: center;
    color: #000000;
-   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     
 }
 
@@ -149,6 +151,7 @@ color: white;
 background: #4D3333;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 17.5474px;
+font-size: 20px;
 }
 #confirmPassword{
     /* position: absolute; */
@@ -186,7 +189,7 @@ border-radius: 17.5474px;
     background: #4D3333;
     box-shadow: 0px 3.50949px 3.50949px rgba(0, 0, 0, 0.25);
     border-radius: 17.5474px;
-
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -216,9 +219,9 @@ text-align: center;
 
 color: #000000;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 
 }
 #signIn{
