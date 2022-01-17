@@ -10,9 +10,8 @@
     position: absolute;
     width: 239px;
     height: 102px;
-    left: 0px;
+    left: -1px;
     top: 0px;
-
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
@@ -31,7 +30,6 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    /* identical to box height */
     color: #A7A7A7;
 }
 
@@ -39,27 +37,76 @@
     position: absolute;
     width: 62px;
     height: 53px;
-    left: 1098px;
-    top: 26px;
+    left: 1095px;
+    top: 22px;
     border-radius: 20px;
 }
 
 #cart{
     position: absolute;
-width: 44px;
-height: 47px;
-left: 1208px;
-top: 30px;
+    width: 44px;
+    height: 47px;
+    left: 1208px;
+    top: 19px;
+    background: linear-gradient(0deg, rgba(255, 168, 168, 0.2), rgba(255, 168, 168, 0.2));
+}
 
-background: linear-gradient(0deg, rgba(255, 168, 168, 0.2), rgba(255, 168, 168, 0.2));
+#cart-label{
+    position: absolute;
+    width: 26px;
+    height: 16px;
+    left: 1217px;
+    top: 66px;
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }
 
 #wishlist{
     position: absolute;
-width: 44px;
-height: 40px;
-left: 1277px;
-top: 26px;
+    width: 44px;
+    height: 40px;
+    left: 1277px;
+    top: 26px;
+    background: linear-gradient(0deg, rgba(252, 252, 252, 0.2), rgba(252, 252, 252, 0.2));
+}
 
-background: linear-gradient(0deg, rgba(252, 252, 252, 0.2), rgba(252, 252, 252, 0.2));
+#wishlist-label{
+    position: absolute;
+    width: 55px;
+    height: 16px;
+    left: 1273px;
+    top: 66px;
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+#profile{
+    position: absolute;
+    width: 44px;
+    height: 47px;
+    left: 1353px;
+    top: 20px;
+    background: linear-gradient(0deg, rgba(255, 224, 224, 0.2), rgba(255, 224, 224, 0.2));
+}
+
+#profile-label{
+    position: absolute;
+    width: 45px;
+    height: 16px;
+    left: 1354px;
+    top: 66px;
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }

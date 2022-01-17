@@ -5,46 +5,33 @@
     left: 0px;
     top: 2664px;
     background: #5A0F0F;
-
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
 
-#footer_left{
-    display: flex;
-    justify-content:space-evenly;
-    /* align-items: center; */
-}
-
 #about-us{
-    /* position: absolute;
+    position: absolute;
     width: 90px;
     height: 23px;
     left: 13px;
-    top: 2684px; */
-
     font-family: Tenor Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
-
     color: #FFFFFF;
 }
 
 #contact-us{
-    /* position: absolute;
+    position: absolute;
     width: 107px;
     height: 23px;
-    left: 130px;
-    top: 2684px; */
     left: 130px;
     font-family: Tenor Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
-
     color: #FFFFFF;
 }
