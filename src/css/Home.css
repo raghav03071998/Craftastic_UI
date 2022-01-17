@@ -14,12 +14,25 @@ body{
     background: linear-gradient(0deg, rgba(255, 236, 236, 0.2), rgba(255, 236, 236, 0.2));
 }
 
-#cat-img > img:first-child {
+/* #cat-img > img:first-child {
     position: absolute;
     width: 287px;
     height: 298px;
     left: 0px;
     top: 1089px;
+} */
+
+#cat-img::after{
+    content: "";
+  clear: both;
+  display: table;
+}
+
+.rendered-img{
+    margin-top: 1089px;
+    float: left;
+  width: 20%;
+  padding: 5px;
 }
 
 #title{
@@ -28,7 +41,7 @@ body{
     height: 89px;
     left: 838px;
     top: 363px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Sevillana;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;

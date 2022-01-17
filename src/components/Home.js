@@ -37,7 +37,7 @@ function Home() {
                 <div id='cat-img'>
                 {
                     categories.map((cat)=>(
-                            <img src={`${cat.image}`}/>
+                            <img className='rendered-img' src={`${cat.image}`}/>
                     ))
                 }
                 </div> 
@@ -60,7 +60,7 @@ function Home() {
                 <a href='/signin'><button id='seller-btn'>Create your Seller Account</button></a>
                 <img id='gstin-icon' src='./logo/doc-icon.png' />
                 <p id='gstin'>GSTIN</p>
-                <img id='bank-icon' src='./logo/bnk-ac.png' />
+                <img id='bank-icon' src='./logo/bank-account.png' />
                 <p id='bank'>Bank Account</p>
                 <img id='product-icon' src='./logo/product.png' />
                 <p id='product'>Product to sell</p>
@@ -82,7 +82,7 @@ function Home() {
                 </div>
                 <div>
                     <div id='box-3'/>
-                    <img id='all-ind-srv' src='./logo/india-service.jpg' /> 
+                    <img id='all-ind-srv' src='./logo/all-india-service.png' /> 
                     <p id='box-3-p1'>Stress-free delivery across India</p>
                     <p id='box-3-p2'>Deliver to 100% of India's serviceable pincodes, through Easy Ship & Fulfillment by Craftastic</p>
                 </div>
