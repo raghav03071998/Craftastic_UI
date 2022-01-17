@@ -34,10 +34,10 @@ function Home() {
             <div>
                 <p id='cat-tag'>Categories</p>
                 <button id='cat-btn'>View All</button>
-                <div id='cat-img'>
+                <div className='cat-img'>
                 {
                     categories.map((cat)=>(
-                            <img className='rendered-img' src={`${cat.image}`}/>
+                        <img className='rendered-img' src={`${cat.image}`} />    
                     ))
                 }
                 </div> 
@@ -46,11 +46,28 @@ function Home() {
             <div>
                 <p id='discount-tag'>Items with discount</p>
                 <button id='discount-btn'>View All</button>
+                <div className='cat-img'>
+                {
+                    categories.map((cat)=>(
+                        <div>
+                            {/* <div className='discount-box'/> */}
+                            <img className='discount-img' src={`${cat.image}`}/>
+                        </div>   
+                    ))
+                }
+                </div> 
             </div>
 
             <div>
                 <p id='auction-tag'>Items for auction</p>
                 <button id='auction-btn'>View All</button>
+                <div className='cat-img'>
+                {
+                    categories.map((cat)=>(
+                        <img className='auction-img' src={`${cat.image}`} />    
+                    ))
+                }
+                </div> 
             </div>
 
             <div>
@@ -58,7 +75,7 @@ function Home() {
                 <p id='seller-p2'>Sell to millions of customers on Craftastic, all across the globe!</p>
                 <p id='seller-p3'>All you need to sell on Craftastic is</p>
                 <a href='/signin'><button id='seller-btn'>Create your Seller Account</button></a>
-                <img id='gstin-icon' src='./logo/doc-icon.png' />
+                <img id='gstin-icon' src='./logo/doc.png' />
                 <p id='gstin'>GSTIN</p>
                 <img id='bank-icon' src='./logo/bank-account.png' />
                 <p id='bank'>Bank Account</p>
@@ -76,7 +93,7 @@ function Home() {
                 </div>
                 <div>
                     <div id='box-2'/>
-                    <img id='courier-icon' src='./logo/courier.jpg' /> 
+                    <img id='courier-icon' src='./logo/courier.png' /> 
                     <p id='box-2-p1'>Reach thousands of customers</p>
                     <p id='box-2-p2'>Sell to thousands of engaged customer visiting Craftastic</p>
                 </div>
