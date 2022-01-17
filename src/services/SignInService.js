@@ -1,7 +1,6 @@
 import http from '../HttpCommon'
-
-const login = credentials =>{
-    return http.post("/login",credentials)
+const login = userData =>{
+    return http.post("https://craftasticapi.herokuapp.com/users/signin",userData)
 }
 
 export default {
