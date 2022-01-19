@@ -35,14 +35,17 @@ function SignIn() {
             }
             if(response.data.Error !=undefined && response.data.Error.code== "auth/user-not-found")
             {
+                setLoading(false);
                 return setError('User not found!');
             }
             if(response.data.Error !=undefined && response.data.Error.code== "auth/invalid-email")
             {
+                setLoading(false);
                 return setError('Invalid email address');
             }
             if(response.data.Error !=undefined && response.data.Error.code== "auth/wrong-password")
             {
+                setLoading(false);
                 return setError('Incorrect Password!');
             }
             //auth/wrong-password
