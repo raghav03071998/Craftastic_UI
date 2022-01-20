@@ -1,8 +1,10 @@
+import { Link } from "@material-ui/core";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
+import history from './../history';
 
 const Container = styled.div`
   width: 100%;
@@ -103,7 +105,7 @@ const Slider = () => {
             </ImgContainer>
             <InfoContainer>
               <Title>{item.title}</Title>
-              <Button>Get Started</Button>
+              <Button onClick={() => history.push('/Signup')}>Get Started</Button>
             </InfoContainer>
           </Slide>
         ))}

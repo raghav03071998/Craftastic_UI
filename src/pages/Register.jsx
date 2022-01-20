@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import {React, useRef, useState} from 'react'
+import { useAuth } from '../contexts/AuthContext';
+import {Alert } from 'react-bootstrap'
 
 const Container = styled.div`
   width: 100vw;
@@ -55,22 +58,53 @@ const Button = styled.button`
 `;
 
 const Register = () => {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const passwordConfirmRef = useRef();
+  const [error,setError] = useState('')
+  const {signup} = useAuth()
+  const [loading,setLoading] = useState(false)
+  async function handleSubmit(e)
+  {
+        e.preventDefault()
+        setLoading(true);
+        console.log(passwordRef.current.value, passwordConfirmRef.current.value)
+        if(passwordRef.current.value!==passwordConfirmRef.current.value)
+        {
+            console.log('not');
+            setLoading(false);
+            return setError('Passwords do not match');
+        }
+        try{
+            setError('')
+            setLoading(false);
+            console.log(emailRef.current.value,passwordConfirmRef.current.value)
+            await signup(emailRef.current.value,passwordRef.current.value)
+        }   
+        catch(error){
+            setLoading(false);
+            console.log(error)
+            setError('Failed to create the acount')
+        }   
+        setLoading(false);
+    }
   return (
     <Container>
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
-        <Form>
-          <Input placeholder="name" />
-          <Input placeholder="last name" />
+        {error && <Alert variant = "danger">{error}</Alert>}
+        <Form  onSubmit={handleSubmit}>
+          <Input placeholder="name"  />
+          <Input placeholder="last name"   />
           <Input placeholder="username" />
-          <Input placeholder="email" />
-          <Input placeholder="password" />
-          <Input placeholder="confirm password" />
+          <Input placeholder="email" ref = {emailRef}/>
+          <Input placeholder="password" ref = {passwordRef}/>
+          <Input placeholder="confirm password" ref = {passwordConfirmRef} />
           <Agreement>
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>
           </Agreement>
-          <Button>CREATE</Button>
+          <Button disabled = {loading} type = "submit"  id = "signup">CREATE</Button>
         </Form>
       </Wrapper>
     </Container>
