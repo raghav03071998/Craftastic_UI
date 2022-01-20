@@ -1,17 +1,32 @@
-import { Send } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
-  height: 60vh;
+  height: 45vh;
   background-color: #fcf5f5;
+  display:flex;
+  flex-direction:row;
+  ${mobile({ flexDirection: "column" })}
+`;
+
+const Left = styled.div`
+  padding-left:40px;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
 `;
+
+const Right = styled.div`
+  padding-left:10rem;
+  display: flex;
+  align-items:right;
+  justify-content: center ;
+  flex-direction: column;
+`;
+
 const Title = styled.h1`
-  font-size: 70px;
+  font-size: 40px;
   margin-bottom: 20px;
 `;
 
@@ -23,40 +38,20 @@ const Desc = styled.div`
 
 `;
 
-const InputContainer = styled.div`
-  width: 50%;
-  height: 40px;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid lightgray;
-  ${mobile({ width: "80%" })}
-`;
-
-const Input = styled.input`
-  border: none;
-  flex: 8;
-  padding-left: 20px;
-`;
-
-const Button = styled.button`
-  flex: 1;
-  border: none;
-  background-color: teal;
-  color: white;
-`;
-
 const Newsletter = () => {
   return (
     <Container>
-      <Title>Newsletter</Title>
-      <Desc>Get timely updates from your favorite products.</Desc>
-      <InputContainer>
-        <Input placeholder="Your email" />
-        <Button>
-          <Send />
-        </Button>
-      </InputContainer>
+      <Left>
+      <Title>Are you Craftastic?</Title>
+      <Desc>Sell to millions of customers on Craftastic, all across the globe!</Desc>
+      <Desc>All you need to sell on Craftastic is</Desc>    
+      </Left>
+
+      <Right>
+        <Title>Why sell at Craftastic? </Title>
+        <Desc>Sell to millions of customers on Craftastic, all across the globe!</Desc>
+        <Desc>All you need to sell on Craftastic is</Desc>
+      </Right>
     </Container>
   );
 };

@@ -1,7 +1,3 @@
-import { Badge } from "@material-ui/core";
-import { Search,FavoriteOutlined, ShoppingCartOutlined, FavoriteBorder, Person, PersonAddOutlined, PersonOutline } from "@material-ui/icons";
-// import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -26,15 +22,8 @@ const Left = styled.div`
   align-items: center;
 `;
 
-const Language = styled.span`
-  font-size: 14px;
-  cursor: pointer;
-  ${mobile({ display: "none" })}
-`;
-
 const SearchContainer = styled.div`
   background-color : white;
-  border: 0.5px solid lightgray;
   display: flex;
   flex:5;
   align-items: right;
@@ -79,15 +68,14 @@ const Navbar = () => {
         <Logo>CRAFTASTIC</Logo>
         <SearchContainer>
             <Input placeholder="Search" />
-            <Search style={{ color: "gray", fontSize: 16},{alignItems:'right',display: 'flex'}} />
+            {/* <Search style={{ color: "gray", fontSize: 16},{alignItems:'right',display: 'flex'},{width:"50px;"}} /> */}
           </SearchContainer> 
-          {/* <Language>EN</Language> */}
         </Left>
         <Right>
-          <MenuItem><PersonOutline/></MenuItem>
-          <MenuItem><FavoriteBorder></FavoriteBorder></MenuItem>
+          <MenuItem></MenuItem>
+          {/* <MenuItem><FavoriteBorder></FavoriteBorder></MenuItem> */}
           <MenuItem>
-              <ShoppingCartOutlined />
+              {/* <ShoppingCartOutlined /> */}
           </MenuItem>
         </Right>
       </Wrapper>

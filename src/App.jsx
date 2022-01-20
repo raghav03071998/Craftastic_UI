@@ -16,9 +16,15 @@ const App = () => {
   return(
   <Router>
     <Routes>
-          <Route path="/signup" element = {<Product/>}>
+          <Route path="/signup" element = {<Register/>}>
           </Route>
-          <Route path="/signin" element = {<ProductList/>}>
+          <Route path="/signin" element = {<Login/>}>
+          </Route>
+          <Route path="/cart" element = {<Cart/>}>
+          </Route>
+          <Route path="/productlist" element = {<ProductList/>}>
+          </Route>
+          <Route path="/product" element = {<Product/>}>
           </Route>
           <Route path="/" element = {<Home/>}>
           </Route>
