@@ -1,6 +1,8 @@
+import { useState, useRef } from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
-
+import {createUserWithEmailAndPassword} from 'firebase/auth';
+import {auth} from '../Firebase'
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -55,6 +57,28 @@ const Button = styled.button`
 `;
 
 const Register = () => {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const[email,setEmail] = useState("");
+  const[password,setPassword] = useState("");
+  const[loginEmail, setLoginEmail] = useState("");
+  const[loginPassword, setLoginPassword]= useState("");
+  const signup = async() =>{
+    console.log('hi');
+    try
+    {
+      const user = await createUserWithEmailAndPassword(auth,email,password);
+      console.log(user);
+    }
+    catch(error)
+    {
+      console.log(error);
+    }
+  }
+  const login = async() =>
+  {
+
+  }
   return (
     <Container>
       <Wrapper>
@@ -63,14 +87,14 @@ const Register = () => {
           <Input placeholder="name" />
           <Input placeholder="last name" />
           <Input placeholder="username" />
-          <Input placeholder="email" />
-          <Input placeholder="password" />
+          <Input placeholder="email" ref = {emailRef}/>
+          <Input placeholder="password" ref = {passwordRef}/>
           <Input placeholder="confirm password" />
           <Agreement>
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>
           </Agreement>
-          <Button>CREATE</Button>
+          <Button onClick={signup}>CREATE</Button>
         </Form>
       </Wrapper>
     </Container>

@@ -68,7 +68,7 @@ const Slider = () => {
             </ImgContainer>
             <InfoContainer>
               <Title>Buy or sell hand-crafted items at one place</Title>
-              <a href="/signin"><Button>Get Started</Button></a>
+              <a href="/signup"><Button>Get Started</Button></a>
             </InfoContainer>
           </Slide>
         ))}
